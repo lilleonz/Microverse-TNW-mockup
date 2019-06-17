@@ -196,7 +196,7 @@ table {
 
 /* MEDIA SETUP NAV BAR */
 
-@media(max-width: 658px) {
+@media(max-width: 670px) {
 	.left-li {
 		display: none;
 	}
@@ -228,3 +228,113 @@ table {
 	}
 }
 /* NAV BAR END */
+
+main {
+	margin-top: 30px;
+}
+/* COVER */
+
+.cover-story {
+	display: grid;
+	height: 60.481770833vh;
+	grid-template-columns: repeat(3,1fr);
+	grid-row: 1fr 1fr;
+}
+
+.article-1 {
+	grid-column: 1/3;
+	grid-row: 1/3;
+	padding: 4px;
+}
+
+.article-2 {
+	grid-column: 3;
+	grid-row: 1;
+	padding:4px;
+}
+
+.article-3 {
+	grid-column: 3;
+	grid-row: 2;
+	padding: 4px;
+}
+
+.article-container{
+	background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Mate-X-796x418.jpg");
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	height: 100%;
+}
+
+.article-content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	will-change: background-color;
+	transition: background-color .4s ease;
+	background: rgba(0,0,0,.25) url("./resources/image-gradient.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+.article-text {
+	color: #ffff;
+	padding: 14px 20px;
+}
+
+.article-text > h2 {
+	margin-bottom: .25em;
+}
+
+.article-text > span {
+	color: hsla(0,0%,100%,.6);
+}
+
+.article-link {
+	text-decoration: none;
+}
+
+.article-link:hover {
+	color: #ffff;
+}
+
+.article-text-big > h2{
+	font-size: 56px;
+	line-height: 1;
+	margin-bottom: .25em;
+	font-family: Avalon,sans-serif;
+	letter-spacing: -.015em;
+}
+
+@media(max-width: 946px) {
+	.cover-story {
+		height: 567px;
+		grid-template-columns: 100vw;
+		grid-row: 1fr 1fr 1fr;
+	}
+
+	.article-1 {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.article-2 {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	
+	.article-3 {
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	.article-text > h2 {
+		font-size: 20px;
+	}
+}
+
+
+/* COVER END */
