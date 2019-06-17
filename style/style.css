@@ -344,30 +344,98 @@ main {
 /* COVER END */
 
 /* Latest News */
-.news-title {
-	font-size: 14px;
+h2.head {
+	margin-bottom: 14px;
+	margin-top: 14px;
+	padding: 4px;
 	font-weight: 700;
-	line-height: 18px;
-	margin-bottom: 1px;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
+	font-size: 28px;
+	line-height: 1.1;
+	text-decoration-color: #f42;
 }
 
-div {
-	display: block;
+h2.head a:visited {
+	color: #f42;
+	text-decoration: none;
 }
 
-h4 {
+h2.head a {
+	color: #f42;
+	text-decoration: none;
+}
+
+h2.head a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+h4.news-title {
 	display: block;
     margin-block-start: 1.33em;
     margin-block-end: 1.33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-	font-size: 14px;
+    font-size: 14px;
+    color: #f42;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+h4.news-title a {
+	color: #000;
+	text-decoration: none;
+}
+
+h4.news-title a:hover {
 	color: #f42;
-	font-weight: 700;
-	line-height: 1.25;
+	text-decoration: none;
+}
+
+.news-byline {
+	font-size: 13px;
+	line-height: 20px;
+	overflow: hidden;
+	color: #aaa;
+	font-size: 12px;
+	line-height: 18px;
+	padding-top: 4px;
+	list-style: none;
+}
+
+.news-byline a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+ul.news-byline a:hover {
+	color: #000;
+    background-color: rgba(255,255,255,.25);
+}
+
+.latest {
+	color: #000;
+	margin-top: 24px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.latest-news > a {
+	padding-bottom: 4px;
+}
+
+.u-row .list{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+div {
+	display: block;
 }
 
 .u-row {
@@ -377,22 +445,17 @@ h4 {
 	margin: -8px;
 }
 
-ul {
-	display: flex;
-	list-style: none;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-	padding-inline-start: 40px;
-}
-
 li {
-	flex-basis: 33.33333333%;
-	max-width: 33.33333333%;
+	flex-basis: 25%;
+	max-width: 25%;
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
+}
+
+.u-col-xs-12 {
+	flex-basis: 100%;
+	max-width: 100%;
 }
 
 .news {
@@ -411,24 +474,14 @@ li {
 	margin-bottom: 8px;
 	position: relative;
 	background-repeat: no-repeat;
-	opacity: 1;
 	background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/wrightforget-455x270.jpg);
 }
 
-.news-byline {
-	font-size: 13px;
-	line-height: 20px;
-	overflow: hidden;
-	color: #aaa;
-	font-size: 12px;
-	line-height: 18px;
-	padding-top: 4px;
-}
-
-@media (max-width: 455px) {
-	.news-img {
-		height: 270px;
-		width: 455px;
+@media (min-width: 1024px) {
+	.latest .u-row { 
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-rows: auto;
+		grid-template-areas: "1fr 1fr 1fr 1fr";
 	}
 }
 
@@ -444,10 +497,9 @@ li {
 	}
 }
 
-@media (min-width 768px) {
+@media (min-width: 768px) {
 	.u-col-m-4 {
 		flex-basis: 33.33333333%;
-		max-width: 33.33333333%;
 	}
 }
 
@@ -457,20 +509,22 @@ li {
 	}
 }
 
-.u-col-xs-12 {
-	flex-basis: 100%;
-	max-width: 100%;
+@media (max-width: 455px) {
+	.news-img {
+		height: 270px;
+		width: 455px;
+	}
 }
 
 @media (min-width: 1024px) {
 	.u-row {
-		margin: -12px;
+		margin: 12px;
 	}
 }
 
 @media (min-width: 768px){
 	.u-row {
-		margin: -10px;
+		margin: 10px;
 	}
-}
+} 
 /* End Latest News */
