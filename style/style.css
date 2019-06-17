@@ -49,6 +49,10 @@ table {
 
 /* CSS RESET END */
 
+* {
+	box-sizing: border-box;
+}
+
 /* WIDTH SHOWER */
 .size-display{
 	z-index:998;
@@ -338,3 +342,135 @@ main {
 
 
 /* COVER END */
+
+/* Latest News */
+.news-title {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 18px;
+	margin-bottom: 1px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+div {
+	display: block;
+}
+
+h4 {
+	display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+	font-size: 14px;
+	color: #f42;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+.u-row {
+	display: flex;
+	flex: 0 1 auto;
+	flex-flow: row wrap;
+	margin: -8px;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+li {
+	flex-basis: 33.33333333%;
+	max-width: 33.33333333%;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+.news {
+	display: block;
+}
+
+.news-img {
+	background-color: #000;
+	background-position: 50%;
+	background-size: cover;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	padding-top: 50%;
+	width: 100%;
+	margin-bottom: 8px;
+	position: relative;
+	background-repeat: no-repeat;
+	opacity: 1;
+	background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/wrightforget-455x270.jpg);
+}
+
+.news-byline {
+	font-size: 13px;
+	line-height: 20px;
+	overflow: hidden;
+	color: #aaa;
+	font-size: 12px;
+	line-height: 18px;
+	padding-top: 4px;
+}
+
+@media (max-width: 455px) {
+	.news-img {
+		height: 270px;
+		width: 455px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.u-col-l-3 {
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+}
+@media (min-width: 1024px) {
+	[class*=u-col-] {
+		padding: 12px;
+	}
+}
+
+@media (min-width 768px) {
+	.u-col-m-4 {
+		flex-basis: 33.33333333%;
+		max-width: 33.33333333%;
+	}
+}
+
+@media (min-width: 768px) {
+	[class*=u-col-] {
+		padding: 10px;
+	}
+}
+
+.u-col-xs-12 {
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+	.u-row {
+		margin: -12px;
+	}
+}
+
+@media (min-width: 768px){
+	.u-row {
+		margin: -10px;
+	}
+}
+/* End Latest News */
