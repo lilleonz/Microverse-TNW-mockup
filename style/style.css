@@ -528,6 +528,7 @@ div {
 /* Latest funding */
 
 .latest-container {
+	clear: right;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -709,6 +710,8 @@ div {
 }
 
 .deals {
+	background: rgba(0,0,0,.25) url("./resources/image-gradient.png") no-repeat;
+	background-size: 100% 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -948,3 +951,177 @@ div {
 }
 /* End of deals */
 
+/* Discount Deals */
+
+.latest-discount {
+	margin: 30px 0;
+	padding: 0 5%;
+}
+
+.see-more {
+	float: right;
+}
+
+.see-more ~ span {
+	float: right;
+}
+
+.discount-grid {
+	clear: right;
+	margin: 20px 0;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: 1fr 1fr;
+}
+
+.discount-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 8% 7%;
+}
+
+.discount-img {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: 180px;
+}
+
+.discount-title {
+	color: #000;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 700;
+	margin: 7px 0;
+}
+
+.discount-title:hover {
+	color: #f42;
+}
+
+.discount-title:visited {
+	color: #000;
+}
+
+.discount-price {
+	font-size: 16px;
+	color: #555;
+}
+
+.discount-price span {
+	color: rgb(170, 170, 170);
+	font-size: 12px;
+	text-decoration: line-through;
+	margin-right: 5px;
+}
+
+.discount-tag {
+	background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+	background-repeat: no-repeat;	
+	background-size: contain;	
+	color: #000;	
+	display: block;	
+	height: 80px;	
+	overflow: hidden;	
+	pointer-events: none;	
+	position: relative;	
+	float: right;
+	width: 80px;	
+	z-index: 10;
+}
+
+.discount-tag div {
+	transform: rotate(45deg);
+	font-size: 14px;
+	font-weight: 700;
+	left: 8px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	top: 25px;
+	width: 100%;
+}
+
+.discount-img-1 {
+	background-image: url("https://cdnp0.stackassets.com/91aa0041a1c31e2daa8074c5a64d7d3d942ba825/store/f370dc372f173b2fb63f60eafc441180db6986fafb7508518bbcadb9dc39/sale_19566_primary_image.jpg");
+}
+
+.discount-img-2 {
+	background-image: url("https://cdnp2.stackassets.com/7467ed773c2aa65269e2af6b4a76ca771714a699/store/b697556c143915c0748db1cccd8553e5328fd4d212a4ad29b60600e3713c/sale_10976_primary_image.jpg");
+}
+
+.discount-img-3 {
+	background-image: url("https://cdnp2.stackassets.com/13c61ad8dd4612a27be0465f58f6dd9b72987607/store/12a65757dc3d1ef4b7142ffc6ae0f4c10a68df8bbdea4878d797f241b025/sale_19737_primary_image.jpg");
+}
+
+.discount-img-4 {
+	background-image: url("https://cdnp1.stackassets.com/6aca4df9cf2f1cf175f1fbc29f8614e891f733b7/store/992819cbbcfc1a56589ebb755ea7f350202685ddd784dfd361613556b596/sale_19942_primary_image.jpg");
+}
+
+.discount-img-5 {
+	background-image: url("https://cdnp0.stackassets.com/0799bf00352de2d2111fa7580a4aeb4d5e36829c/store/831574f40ca85b498631ae2881f81d02cd9eedd411afd5c0c8f689969ad6/sale_19040_primary_image.jpg");
+}
+
+.discount-img-6 {
+	background-image: url("https://cdnp0.stackassets.com/b11c1ceea51d735586259e5ad30e9da08c50a3ad/store/066c956b57a2603c49ebdf774b022c1361486789eb9cc2a04559e8804830/sale_19825_primary_image.jpg");
+}
+
+.discount-img-7 {
+	background-image: url("https://cdnp2.stackassets.com/64803a176743ca9a7c8107294ff2022dd5e084de/store/dcc7cacb3e9933240d6c4807100acd82ebb83d22c74ed65b897b75e5163a/sale_19221_primary_image.jpg");
+}
+
+.discount-img-8 {
+	background-image: url("https://cdnp1.stackassets.com/46edbe38d2f6a1a97acbd563f2470acace5bc04f/store/0c9b584c44c415c8596e77a7e929b79628571772ddc31352718819900b53/sale_19370_primary_image.jpg");
+}
+
+
+@media (max-width: 1200px) {
+	.discount-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+}
+
+@media (max-width: 800px) {
+	.discount-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	.discount-container {
+		display: block;
+		flex-direction: row;
+		flex: 0 1 auto;
+		flex-flow: row wrap;
+		padding: 20px 0;
+	}
+
+	.discount-img {
+		float: left;
+		width: 75px;
+		height: 75px;
+	}
+
+	.discount-tag {
+		display: none;
+	}
+
+	.discount-title {
+		float: left;
+		margin: 15px;
+	}
+
+	.discount-price {
+		width: 20%;
+		float: left;
+		margin: 0 15px;
+	}
+}
+
+/* End discount Deals */
