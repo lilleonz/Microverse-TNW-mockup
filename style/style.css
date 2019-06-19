@@ -195,9 +195,9 @@ main {
 
 .cover-story {
 	display: grid;
-	height: 60.481770833vh;
+	height: 78vh;
 	grid-template-columns: repeat(3,1fr);
-	grid-row: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
 
 .article-1 {
@@ -227,16 +227,45 @@ main {
 	height: 100%;
 }
 
+
+.article-red {
+	background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	mix-blend-mode: lighten;
+	pointer-events: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-size: 100% 100%;
+	height: 100%;
+}
+
+
+.article-logo {
+	background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+	background-size: contain;
+	max-width: 50%;
+	height: 100%;
+	max-height: 112px;
+	line-height: 1;
+	margin-left: 24px;
+	pointer-events: none;
+	text-align: right;
+	position: relative;
+	margin-top: 24px;
+}
+
 .article-content {
 	height: 100%;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
 	will-change: background-color;
 	transition: background-color .4s ease;
 	background: rgba(0,0,0,.25) url("./resources/image-gradient.png") no-repeat;
 	background-size: 100% 100%;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
 }
 
 .article-text {
@@ -268,11 +297,22 @@ main {
 	letter-spacing: -.015em;
 }
 
+@media(max-width: 1024px){
+	.article-red{
+		background: none;
+		justify-content: flex-end;
+	}
+
+	.article-logo {
+		display: none;
+	}
+}
+
 @media(max-width: 946px) {
 	.cover-story {
 		height: 567px;
 		grid-template-columns: 100vw;
-		grid-row: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 	}
 
 	.article-1 {
@@ -327,8 +367,6 @@ h2.head a:hover {
 h4.news-title {
 	display: block;
 	margin: 0.5rem;	
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
     font-size: 14px;
     color: #f42;
@@ -723,56 +761,56 @@ div {
 	background-image: url(../style/resources/section-image-1.png);
 	background-size: cover;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .deals-img-2 {
 	background-image: url(../style/resources/section-image-2.png);
 	background-size: cover;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .deals-img-3 {
 	background-image: url(../style/resources/section-image-3.png);
 	background-size: cover;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .deals-img-4 {
 	background-image: url(../style/resources/section-image-4.png);
 	background-size: cover;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .deals-img-5 {
 	background-image: url(../style/resources/section-image-5.png);
 	background-size: cover;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .deals-img-6 {
 	background-image: url(../style/resources/cover-image-1.jpg);
 	background-size: cover;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .deals-img-7 {
 	background-image: url(../style/resources/section-image-7.jpg);
 	background-size: cover;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .deals-img-8 {
 	background-image: url(../style/resources/cover-image-3.jpg);
 	background-size: cover;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .deals-article-text {
@@ -819,7 +857,7 @@ div {
 	background-image: url(../style/resources/latest-news-1.png);
 	background-size: auto;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .latest-deals-img-2 {
@@ -829,7 +867,7 @@ div {
 	background-image: url(../style/resources/latest-news-2.png);
 	background-size: auto;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .latest-deals-img-3 {
@@ -839,7 +877,7 @@ div {
 	background-image: url(../style/resources/latest-news-3.jpg);
 	background-size: auto;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .latest-deals-img-4 {
@@ -849,7 +887,7 @@ div {
 	background-image: url(../style/resources/latest-news-4.jpg);
 	background-size: auto;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .latest-deals-img-5 {
@@ -859,7 +897,7 @@ div {
 	background-image: url(../style/resources/latest-news-5.jpg);
 	background-size: auto;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .latest-deals-img-6 {
@@ -869,7 +907,7 @@ div {
 	background-image: url(../style/resources/latest-news-6.png);
 	background-size: auto;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .latest-deals-img-7 {
@@ -879,7 +917,7 @@ div {
 	background-image: url(../style/resources/latest-news-7.jpg);
 	background-size: auto;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .latest-deals-img-8 {
@@ -889,7 +927,7 @@ div {
 	background-image: url(../style/resources/latest-news-8.png);
 	background-size: auto;
 	background-position: 50%;
-	background-image: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .latest-deals p {
