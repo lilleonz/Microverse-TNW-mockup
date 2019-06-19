@@ -1078,6 +1078,9 @@ div {
 	background-image: url("https://cdnp1.stackassets.com/46edbe38d2f6a1a97acbd563f2470acace5bc04f/store/0c9b584c44c415c8596e77a7e929b79628571772ddc31352718819900b53/sale_19370_primary_image.jpg");
 }
 
+.discount-container div {
+	margin-top: 10px;
+}
 
 @media (max-width: 1200px) {
 	.discount-grid {
@@ -1095,33 +1098,150 @@ div {
 	}
 
 	.discount-container {
-		display: block;
 		flex-direction: row;
-		flex: 0 1 auto;
-		flex-flow: row wrap;
 		padding: 20px 0;
 	}
 
 	.discount-img {
-		float: left;
-		width: 75px;
-		height: 75px;
+		width: 15%;
+		height: 100%;
+		min-width: 85px;
+		min-height: 64px;
 	}
 
 	.discount-tag {
 		display: none;
 	}
 
-	.discount-title {
-		float: left;
+	.discount-container div {
 		margin: 15px;
-	}
-
-	.discount-price {
-		width: 20%;
-		float: left;
-		margin: 0 15px;
+		width: 85%;
 	}
 }
 
 /* End discount Deals */
+
+/* Footer */
+
+footer {
+	height: 40vh;
+}
+
+.footer-top {
+	height: 60%;
+	color: rgb(85, 85, 85);
+	background-color: #131313;
+	padding: 3em 0 2em;
+}
+
+.media-icons {
+	box-sizing: content-box;
+	margin:0 auto 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.media-icons li {
+	box-sizing: border-box;
+	display: inline-block;
+	color: white;
+	margin: 0 8px;
+}
+
+.media-icons li {
+	padding: 10px;
+	background-color: #333;
+	border-radius: 50%;
+	border: 2px solid #333;
+}
+
+.media-icons li:hover {
+	background-color: #111;
+}
+
+.internal-links {
+	list-style: none;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.internal-links li {
+	color: #aaa;
+	font-family: Shentox,sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 13px;
+	line-height: 24px;
+	margin: 0 8px;
+}
+
+.internal-link{
+	text-decoration: none;
+}
+
+.internal-link:visited {
+	color: #aaa;
+}
+
+.internal-link:hover {
+	color: #ffff; 
+}
+
+.footer-bottom {
+	height: 40%;
+	background: #000;
+	color: #aaa;
+	padding: 3em 0;
+	font-size: 13px;
+}
+
+.footer-legal-logoTNW, .footer-legal-logoStackPath {
+	height: 9px;
+}
+
+
+.footer-bottom {
+	text-align: center;	
+}
+
+b {
+	color:red;
+}
+
+
+@media (max-width: 380px){
+	.media-icons li{
+		padding: 4px
+	}
+
+	footer {
+		height: 50vh;
+	}
+
+	.footer-top{
+		height: 80%;
+	}
+
+	.footer-bottom{
+		height: 20%;
+	}
+
+	.internal-links li{
+		width: -mox-fit-content;
+		width: fit-content;
+		margin: 0 auto;
+	}
+
+	.internal-links {
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+
+	}
+
+}
+/* End of footer */
